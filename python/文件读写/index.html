@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>lua select 函数 - 杨小哥博客</title>
+        <title>19. 文件读写 - 杨小哥博客</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -46,28 +46,28 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">lua <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../表的构造/">lua 表的构造</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">lua select 函数</a>
+    <a href="../../lua/表的构造/">lua 表的构造</a>
 </li>
                                     
 <li >
-    <a href="../opp/">lua 面向对象</a>
+    <a href="../../lua/select函数/">lua select 函数</a>
 </li>
                                     
 <li >
-    <a href="../错误处理 pcall & xpcall/">错误处理 pcall & xpcall</a>
+    <a href="../../lua/opp/">lua 面向对象</a>
 </li>
                                     
 <li >
-    <a href="../协程实现生产者消费者/">协程实现生产者消费者</a>
+    <a href="../../lua/错误处理 pcall & xpcall/">错误处理 pcall & xpcall</a>
+</li>
+                                    
+<li >
+    <a href="../../lua/协程实现生产者消费者/">协程实现生产者消费者</a>
 </li>
                                 </ul>
                             </li>
@@ -84,7 +84,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">python <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -93,87 +93,87 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../../python/python相关介绍/">1. python相关介绍</a>
+    <a href="../python相关介绍/">1. python相关介绍</a>
 </li>
             
 <li >
-    <a href="../../python/python基础语法/">2. python基础语法</a>
+    <a href="../python基础语法/">2. python基础语法</a>
 </li>
             
 <li >
-    <a href="../../python/python字符串/">3. 字符串</a>
+    <a href="../python字符串/">3. 字符串</a>
 </li>
             
 <li >
-    <a href="../../python/python循环/">4. 循环</a>
+    <a href="../python循环/">4. 循环</a>
 </li>
             
 <li >
-    <a href="../../python/python列表/">5. 列表</a>
+    <a href="../python列表/">5. 列表</a>
 </li>
             
 <li >
-    <a href="../../python/python元组/">6. 元组</a>
+    <a href="../python元组/">6. 元组</a>
 </li>
             
 <li >
-    <a href="../../python/python字典/">7. 字典</a>
+    <a href="../python字典/">7. 字典</a>
 </li>
             
 <li >
-    <a href="../../python/python集合/">8. 集合</a>
+    <a href="../python集合/">8. 集合</a>
 </li>
             
 <li >
-    <a href="../../python/python函数/">9. 函数</a>
+    <a href="../python函数/">9. 函数</a>
 </li>
             
 <li >
-    <a href="../../python/python作用域/">10. 作用域</a>
+    <a href="../python作用域/">10. 作用域</a>
 </li>
             
 <li >
-    <a href="../../python/python高阶函数/">11. 高阶函数</a>
+    <a href="../python高阶函数/">11. 高阶函数</a>
 </li>
             
 <li >
-    <a href="../../python/python递归/">12. 递归</a>
+    <a href="../python递归/">12. 递归</a>
 </li>
             
 <li >
-    <a href="../../python/python装饰器/">13. 装饰器</a>
+    <a href="../python装饰器/">13. 装饰器</a>
 </li>
             
 <li >
-    <a href="../../python/python模块/">14. 模块</a>
+    <a href="../python模块/">14. 模块</a>
 </li>
             
 <li >
-    <a href="../../python/python包/">15. 包</a>
+    <a href="../python包/">15. 包</a>
 </li>
             
 <li >
-    <a href="../../python/python异常/">16. 异常</a>
+    <a href="../python异常/">16. 异常</a>
 </li>
             
 <li >
-    <a href="../../python/python迭代器和生成器/">17. 迭代器和生成器</a>
+    <a href="../python迭代器和生成器/">17. 迭代器和生成器</a>
 </li>
             
 <li >
-    <a href="../../python/字节串和字节数组/">18. 字节串和字节数组</a>
+    <a href="../字节串和字节数组/">18. 字节串和字节数组</a>
+</li>
+            
+<li class="active">
+    <a href="./">19. 文件读写</a>
 </li>
             
 <li >
-    <a href="../../python/文件读写/">19. 文件读写</a>
+    <a href="../字符编码/">20. 字符编码</a>
 </li>
             
 <li >
-    <a href="../../python/字符编码/">20. 字符编码</a>
-</li>
-            
-<li >
-    <a href="../../python/补充知识点/">补充知识点</a>
+    <a href="../补充知识点/">补充知识点</a>
 </li>
     </ul>
   </li>
@@ -252,12 +252,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../表的构造/">
+                                <a rel="next" href="../字节串和字节数组/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../opp/">
+                                <a rel="prev" href="../字符编码/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -269,72 +269,221 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#select">select函数</a></li>
-        <li class="main "><a href="#_1">前言</a></li>
-        <li class="main "><a href="#_2">内容</a></li>
-            <li><a href="#_3">示例代码</a></li>
+        <li class="main active"><a href="#file">文件 file</a></li>
+        <li class="main "><a href="#_1">文件的操作流程</a></li>
+        <li class="main "><a href="#_2">文件的打开函数</a></li>
+        <li class="main "><a href="#_3">文件流的关闭方法</a></li>
+        <li class="main "><a href="#_4">文本文件的操作</a></li>
+        <li class="main "><a href="#_5">文本文件读方法</a></li>
+        <li class="main "><a href="#_6">文本文件的写方法</a></li>
+            <li><a href="#_7">练习</a></li>
+        <li class="main "><a href="#_8">模式字符串</a></li>
+        <li class="main "><a href="#_9">文件的迭代读取</a></li>
+            <li><a href="#_10">练习</a></li>
+        <li class="main "><a href="#_11">标准输入输出文件</a></li>
+        <li class="main "><a href="#_12">二进制文件操作</a></li>
+            <li><a href="#ftell">f.tell()方法</a></li>
+            <li><a href="#fseek">f.seek()方法</a></li>
+            <li><a href="#fflush">f.flush() 方法</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="select">select函数</h1>
-<h1 id="_1">前言</h1>
-<p>今天这个函数看到的时候，第一印象就是想到了c语言中大名鼎鼎的<code>select</code>函数，因为他们函数名是一样的，并且lua也是用c语言实现的，所以我认为这个函数跟那个是相同的，可是转念一想lua好像没有什么和网络相关的函数，然后查了一下这个函数的定义，发现这个函数真的就是字面的意思，起到一个选择的作用，我们一起来看一下函数的用法。</p>
-<h1 id="_2">内容</h1>
-<p>select()</p>
-<ul>
-<li>原型：select(index, ···)</li>
-<li>解释： 如果 <code>index</code> 是个数字， 那么返回参数中第 <code>index</code> 个之后的部分； 负的数字会从后向前索引（-1 指最后一个参数）。 否则，<code>index</code> 必须是字符串 <code>"#"</code>， 此时 <code>select</code> 返回参数的个数。 </li>
-</ul>
-<hr />
-<h2 id="_3">示例代码</h2>
-<pre><code class="go">-- 先来试试数字索引
-print(&quot;\nthe number index result:&quot;)
-print(select(2, 'b', 'c', 'd', 'e'));
-
--- 无效的索引
-print(&quot;\nthe number index of invalid result:&quot;)
-print(select(20000, 'b', 'c', 'd', 'e'));
-
--- 字符串#索引
-print(&quot;\nthe '#' index of invalid result:&quot;)
-print(select('#', 'b', 'c', 'd', 'e'));
-
-
--- 再来看一个常用的例子
-function print_multi_argv(...)
-    print(&quot;\narg list is&quot;)
-    for i = 1, select('#', ...) do      -- get the count of the params  
-        local cur_arg = select(i, ...); -- select the param  
-        print(cur_arg);
-    end  
-end
-
--- 试验一下打印多个参数
-print_multi_argv(1, 2, 3, 'a', 'b', 'f', 't')
+<h3 id="file">文件 file</h3>
+<pre><code>什么是文件
+        文件是用于数据存储的单位
+        文件通常用来长期存储数据
+        文件中的数据是以字节(byte)为单位进行存储的
 </code></pre>
 
-<ul>
-<li>运行结果</li>
-</ul>
-<pre><code class="lua">the number index result:
-c   d   e
+<h3 id="_1">文件的操作流程</h3>
+<ol>
+<li>
+<p>打开文件</p>
+</li>
+<li>
+<p>读/写 文件</p>
+</li>
+<li>
+<p>关闭文件</p>
+<p>注： 任何操作系统， 一个应用程序同时打开文件的数量有最大数限制</p>
+</li>
+</ol>
+<h3 id="_2">文件的打开函数</h3>
+<pre><code>open(file, mode='rt')
+        用于打开一个文件，返回文件流对象，如果打开失败则会触发OSError错误
+</code></pre>
 
-the number index of invalid result:
+<h3 id="_3">文件流的关闭方法</h3>
+<p>​    F.close()  # 关闭文件，释放系统资源</p>
+<pre><code class="python">with open('mynote.txt', 'w', encoding='utf-8') as f:
+    try:
+        f.write('今天天气好晴朗')
+    finally:
+        f.close()
+</code></pre>
 
+<h3 id="_4">文本文件的操作</h3>
+<pre><code>    文本文件的模式字符
+        't'
+    说明
+        1. 对文本文件的读写需要用字符串str 进行读取和写入数据
+        2. 默认文件中存储的都是字符（文字）数据，在读写中会自动进行编码转换操作
+        3. 以行为单位分隔，在python内统一用'\n'作为换行符进行分隔
 
-the '#' index of invalid result:
-4
+    各操作系统的换行符
+        Linux换行符: '\n'
+        Windows 换行符： '\r\n'
+        旧的Macintosh换行符： '\r'
+        新的Mac Os换行符： '\n'
+</code></pre>
 
-arg list is
-1
-2
-3
-a
-b
-f
-t
+<h3 id="_5">文本文件读方法</h3>
+<pre><code>    f.readline()
+    f.readlines()
+    f.read(字符数或字节数)
+</code></pre>
 
+<h3 id="_6">文本文件的写方法</h3>
+<pre><code>    f.write(字符串)
+    f.writelines(字符串列表)
+</code></pre>
+
+<h5 id="_7">练习</h5>
+<pre><code>自己写一个文件'info.txt' 内部存一些文字信息如下
+        张三 20 100
+        李四 21 96
+        小王 20 98
+注
+    以上信息用空格作用分隔符分开
+写程序将这些数据读取出来，并以如下格式打印出来
+    张三 今年 20岁， 成绩是：100
+    李四 今年 21岁， 成绩是：96
+    小王 今年 20岁， 成绩是：98
+</code></pre>
+
+<h3 id="_8">模式字符串</h3>
+<pre><code>'w'  只写覆盖
+'x'  文本模式
+'a'  只写追加
+</code></pre>
+
+<h3 id="_9">文件的迭代读取</h3>
+<p>​    文件流对象是可迭代对象，迭代过程将以换行符'\n'作为分隔符依次获取</p>
+<pre><code class="python"># 示例
+    f = open('info.txt', 'rt', encoding='utf-8')
+    for line in f:  # f绑定的文件流对象是可迭代对象
+        print(line)
+    f.close()
+</code></pre>
+
+<h5 id="_10">练习</h5>
+<ol>
+<li>写程序，读读入任意行文字，当输入空行时结束输入，先将这些读入的文字存入列表中，然后再把列表里的内容存入到'input.txt'文件中</li>
+<li>写程序，从上题的'input.txt'中读取之前输入的数据，读取到列表中，加上行号进行输出</li>
+</ol>
+<h3 id="_11">标准输入输出文件</h3>
+<pre><code>    sys.stdin 标准输入文件（默认为键盘设备）
+        ctrl + d  (Linux) 是让键盘输入文件结束符
+
+    sys.stdout 标准输出文件（默认为屏幕终端）
+    sys.stderr 标准错误输出文件（默认为屏幕终端）
+        模块名：sys
+    说明
+        1. 标准文件不需要打开和关闭就能使用
+        2. 每一个python程序启动后都会有以上三个文件供我们使用
+</code></pre>
+
+<pre><code class="python"># 此示例示意标准输入文件的用法
+import sys
+s = sys.stdin.readline()
+print(s)
+
+sys.stdin.close()  # 关闭stdin 文件，则input无法使用
+s2 = input('请输入')
+print(s2)
+</code></pre>
+
+<pre><code class="python">import sys
+sys.stdout.write('我是一个标准输出\n ')
+sys.stderr.write('我的出现是个错误!!!\n')
+
+help(print)
+</code></pre>
+
+<h3 id="_12">二进制文件操作</h3>
+<pre><code>模式字符： 'b'
+
+默认文件中存储的都是以字节为单位的数据，通常有人为的格式，对二进制文件的读写需要用字节串(bytes) 进行操作
+</code></pre>
+
+<p><strong>常用的操作方法</strong></p>
+<pre><code>    F.read([字节数/字符数])
+        对于文本文件，F.read()返回类型为字符串str
+        对于二进制文件，F.read()返回类型为字节串bytes
+    F.write()
+        同上，对于二进制文件，写入的数据为字节串bytes或字节数组bytearray
+</code></pre>
+
+<h5 id="ftell">f.tell()方法</h5>
+<p>返回当前的读写位置（以字节为单位，从1开始）</p>
+<pre><code>     # 此示例示意tell方法的用法
+    try:
+        with open('text.txt', 'rb') as f:
+            b = f.read(3)  # 读了3个字节
+            pos = f.tell()
+            print('当前的读写位置是：', pos)
+            f.read(1)
+            print('再读一次后，读写位置是：', f.tell())
+    except OSError:
+        print('读取失败')
+    finally:
+        f.close()
+
+</code></pre>
+
+<h5 id="fseek">f.seek()方法</h5>
+<pre><code>    作用
+        设置文件的读写位置
+    格式
+        f.seek(偏移量，whence=相对位置)
+        偏移量
+            大于0代表向文件尾方向移动
+            小于0代表向文件头方向移动
+        相对位置
+            0 代表从文件头开始偏移
+            1 代表从当前位置开始偏移
+            2 代表从文件尾开始偏移
+</code></pre>
+
+<pre><code class="python"># 此示例示意seek方法的用法
+try:
+    with open('text.txt', 'rb') as f:
+        f.seek(5, 0)  # 文件读指针从文件头开始向右移动5个字节
+        b = f.read(3)
+        print(b)
+
+except OSError:
+    print('读取文件失败')
+
+finally:
+    f.close()
+</code></pre>
+
+<h5 id="fflush">f.flush() 方法</h5>
+<pre><code class="python">    # 此示例示意flush方法的用法
+    try:
+        with open('myflush.txt', 'w') as f:
+            f.write('aaaaaaaaaa')
+            f.flush()  # 强制将缓冲区的内容写到磁盘上
+            s = input('请输入回车继续：')
+            print('ok')
+
+    except OSError:
+        print('读取文件失败')
+
+    finally:
+        f.close()
 </code></pre></div>
         </div>
 
