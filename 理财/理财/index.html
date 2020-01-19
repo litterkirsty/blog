@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>2. 递归 - 杨小哥博客</title>
+        <title>基金理财 - 杨小哥博客</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -46,20 +46,70 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">算法 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../排序算法/">排序算法</a>
+    <a href="../../算法/数据结构和算法思维导图.md">数据结构和算法思维导图</a>
 </li>
                                     
 <li >
-    <a href="../位运算/">1. 位运算</a>
+    <a href="../../算法/滑动窗口原理/">滑动窗口原理</a>
 </li>
                                     
-<li class="active">
-    <a href="./">2. 递归</a>
+  <li class="dropdown-submenu">
+    <a href="#">排序算法</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../算法/排序算法时间复杂度/">1. 排序算法时间复杂度</a>
+</li>
+            
+<li >
+    <a href="../../算法/排序算法/">2. 基本排序算法</a>
+</li>
+            
+<li >
+    <a href="../../算法/分治法和归并排序/">3. 分治法和归并排序</a>
+</li>
+            
+<li >
+    <a href="../../算法/快速排序/">4. 快速排序</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../算法/位运算/">位运算</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/递归/">递归</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/复杂度分析-上/">1. 复杂度分析-上</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/复杂度分析-下/">2. 复杂度分析-下</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/数组/">3. 数组</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/链表-上/">4. 链表-上</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/链表-下/">5. 链表-下</a>
+</li>
+                                    
+<li >
+    <a href="../../算法/栈/">6. 栈</a>
 </li>
                                 </ul>
                             </li>
@@ -277,12 +327,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">理财 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../skynet/并.md">基金理财</a>
+<li class="active">
+    <a href="./">基金理财</a>
 </li>
                                 </ul>
                             </li>
@@ -295,12 +345,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../位运算/">
+                                <a rel="next" href="../../tools/linux操作系统/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../../lua/表的构造/">
+                            <li class="disabled">
+                                <a rel="prev" >
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -312,110 +362,18 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">递归</a></li>
-            <li><a href="#_2">递归说明</a></li>
-            <li><a href="#_3">递归的优缺点</a></li>
-            <li><a href="#_4">递归调用分为两个阶段</a></li>
-        <li class="main "><a href="#1">题1: 求阶乘</a></li>
-        <li class="main "><a href="#2-i-j">题2: 打印i-j</a></li>
-        <li class="main "><a href="#3">题3: 数组求和</a></li>
-        <li class="main "><a href="#4">题4: 字符串翻转</a></li>
-        <li class="main "><a href="#5">题5: 斐波那契数列</a></li>
-        <li class="main "><a href="#_5">汉诺塔</a></li>
-        <li class="main "><a href="#_6">二分查找</a></li>
+        <li class="main active"><a href="#_1">值得投资的行业指数</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="_1">递归</h3>
-<p>函数直接或间接调用自身</p>
-<h5 id="_2">递归说明</h5>
-<ul>
-<li>递归一定要控制递归的层数，当符合某一条件时要终止递归调用</li>
-<li>几乎所有的递归都能用while循环来代替</li>
-</ul>
-<h5 id="_3">递归的优缺点</h5>
-<ul>
-<li>优点: 可以把问题简单化，让思路理会为清晰，代码更简洁</li>
-<li>缺点: 递归因系统环境影响大，当递归深度太大时，可能会得到不可预知的结果</li>
-</ul>
-<h5 id="_4">递归调用分为两个阶段</h5>
-<ul>
-<li>递推阶段: 从原问题出发，按递归公式递推，从未知到已知，最终达到递归终止条件</li>
-<li>回归阶段: 按递归终止条件求出结果，逆向逐步代入递归公式，回归到原问题求解</li>
-</ul>
-<h3 id="1">题1: 求阶乘</h3>
-<pre><code class="python">def factor(n):
-    '''求n的阶乘'''
-    if n == 1: return 1
-    return n * factor(n-1)
-</code></pre>
-
-<h3 id="2-i-j">题2: 打印i-j</h3>
-<pre><code class="python">def print_i2j(i, j):
-    if i &gt;= j: return
-    print(i)
-    print_i2j(i+1, j)
-</code></pre>
-
-<h3 id="3">题3: 数组求和</h3>
-<pre><code class="python">def sum(nums, begin):
-    if begin == len(nums) - 1: return nums[begin]
-    return nums[begin] + sum(nums, begin+1)
-
-
-print(sum([1, 2, 3, 4, 5], 0))
-</code></pre>
-
-<h3 id="4">题4: 字符串翻转</h3>
-<pre><code class="python">def reverse(string):
-    if len(string) == 1: return string
-    return string[-1] + reverse(string[:-1])
-
-
-print(reverse('abcdefgh'))
-</code></pre>
-
-<h3 id="5">题5: 斐波那契数列</h3>
-<pre><code class="python">def febo(n):
-    if n &lt; 3: return 1
-    return febo(n-1) + febo(n - 2)
-
-
-print(febo(7))
-</code></pre>
-
-<h3 id="_5">汉诺塔</h3>
-<p>1~N从A到B，C作为辅助</p>
-<pre><code>等价于
-    1. 1~N-1 从A移动到C，B作为辅助
-    2. 把N从A移动到B
-    3. 1~N-1 从C移动到B，A作为辅助
-</code></pre>
-
-<h3 id="_6">二分查找</h3>
-<pre><code>等价于三个子问题：
-    左边找（递归）
-    中间比较
-    右边找（递归）
-注意：左查找和右查找只选其一
-</code></pre>
-
-<pre><code class="python">def bin_search(nums, n, lower=0, upper=None):
-    upper = len(nums) if upper is None else upper
-    if upper &lt;= lower: return -1
-
-    mid = (lower + upper) // 2
-    if nums[mid] &gt; n:
-        return bin_search(nums, n, lower, mid)
-    elif nums[mid] &lt; n:
-        return bin_search(nums, n, mid+1, upper)
-    else:
-        return mid
-
-
-print(bin_search([0, 1, 2, 3, 4, 5, 6, 7], 8))
-</code></pre></div>
+<h3 id="_1">值得投资的行业指数</h3>
+<ol>
+<li>泛教育</li>
+<li>泛理财（理财自媒体...）</li>
+<li>泛娱乐</li>
+<li>泛健康（医药，生物科技，医疗器械，新能源，环保）</li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">

@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>lua 面向对象 - 杨小哥博客</title>
+        <title>2. 基本排序算法 - 杨小哥博客</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -46,16 +46,16 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">算法 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../算法/数据结构和算法思维导图.md">数据结构和算法思维导图</a>
+    <a href="../数据结构和算法思维导图.md">数据结构和算法思维导图</a>
 </li>
                                     
 <li >
-    <a href="../../算法/滑动窗口原理/">滑动窗口原理</a>
+    <a href="../滑动窗口原理/">滑动窗口原理</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -63,86 +63,86 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../../算法/排序算法时间复杂度/">1. 排序算法时间复杂度</a>
+    <a href="../排序算法时间复杂度/">1. 排序算法时间复杂度</a>
+</li>
+            
+<li class="active">
+    <a href="./">2. 基本排序算法</a>
 </li>
             
 <li >
-    <a href="../../算法/排序算法/">2. 基本排序算法</a>
+    <a href="../分治法和归并排序/">3. 分治法和归并排序</a>
 </li>
             
 <li >
-    <a href="../../算法/分治法和归并排序/">3. 分治法和归并排序</a>
-</li>
-            
-<li >
-    <a href="../../算法/快速排序/">4. 快速排序</a>
+    <a href="../快速排序/">4. 快速排序</a>
 </li>
     </ul>
   </li>
                                     
 <li >
-    <a href="../../算法/位运算/">位运算</a>
+    <a href="../位运算/">位运算</a>
 </li>
                                     
 <li >
-    <a href="../../算法/递归/">递归</a>
+    <a href="../递归/">递归</a>
 </li>
                                     
 <li >
-    <a href="../../算法/复杂度分析-上/">1. 复杂度分析-上</a>
+    <a href="../复杂度分析-上/">1. 复杂度分析-上</a>
 </li>
                                     
 <li >
-    <a href="../../算法/复杂度分析-下/">2. 复杂度分析-下</a>
+    <a href="../复杂度分析-下/">2. 复杂度分析-下</a>
 </li>
                                     
 <li >
-    <a href="../../算法/数组/">3. 数组</a>
+    <a href="../数组/">3. 数组</a>
 </li>
                                     
 <li >
-    <a href="../../算法/链表-上/">4. 链表-上</a>
+    <a href="../链表-上/">4. 链表-上</a>
 </li>
                                     
 <li >
-    <a href="../../算法/链表-下/">5. 链表-下</a>
+    <a href="../链表-下/">5. 链表-下</a>
 </li>
                                     
 <li >
-    <a href="../../算法/栈/">6. 栈</a>
+    <a href="../栈/">6. 栈</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">lua <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../表的构造/">lua 表的构造</a>
+    <a href="../../lua/表的构造/">lua 表的构造</a>
 </li>
                                     
 <li >
-    <a href="../select函数/">lua select 函数</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">lua 面向对象</a>
+    <a href="../../lua/select函数/">lua select 函数</a>
 </li>
                                     
 <li >
-    <a href="../pairs和ipairs/">pairs和ipairs</a>
+    <a href="../../lua/opp/">lua 面向对象</a>
 </li>
                                     
 <li >
-    <a href="../错误处理 pcall & xpcall/">错误处理 pcall & xpcall</a>
+    <a href="../../lua/pairs和ipairs/">pairs和ipairs</a>
 </li>
                                     
 <li >
-    <a href="../协程实现生产者消费者/">协程实现生产者消费者</a>
+    <a href="../../lua/错误处理 pcall & xpcall/">错误处理 pcall & xpcall</a>
 </li>
                                     
 <li >
-    <a href="../lua 实现单链表/">lua 单链表</a>
+    <a href="../../lua/协程实现生产者消费者/">协程实现生产者消费者</a>
+</li>
+                                    
+<li >
+    <a href="../../lua/lua 实现单链表/">lua 单链表</a>
 </li>
                                 </ul>
                             </li>
@@ -345,12 +345,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../select函数/">
+                                <a rel="next" href="../排序算法时间复杂度/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../pairs和ipairs/">
+                                <a rel="prev" href="../分治法和归并排序/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -362,75 +362,124 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#lua">lua 面向对象</a></li>
+        <li class="main active"><a href="#_1">基本排序算法</a></li>
+            <li><a href="#n2">冒泡排序(n**2)</a></li>
+            <li><a href="#n2_1">选择排序(n**2)</a></li>
+            <li><a href="#n2_2">插入排序(n**2)</a></li>
+            <li><a href="#_2">希尔排序</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="lua">lua 面向对象</h1>
-<pre><code class="lua">--    写一个农民类Peasant有方法：
---        def farm(self, plant):
---            ...
---    写一个工人类Worker
---        方法如下：
---            def work(self, that):
---                ...
---    创建一个农民工为MigrantWorker, 让此类的对象拥有上面两个类的全部方法
---    person = MigrantWorker()
---    person.farm('水稻')  # 正在种植 水稻
---    person.work('汽车')  # 正在制造 汽车
+<h1 id="_1">基本排序算法</h1>
+<h3 id="n2">冒泡排序(n**2)</h3>
+<p>进行n-1轮迭代，每次比较相邻的两个元素，如果前者大于后者，则交换顺序。因为直接在元素上进行操作，所以不会返回新的数组。其实就是每一轮冒泡，一个最大的元素就会通过比较相邻的元素，移到最右边。</p>
+<p>你可以想象一个，10个小朋友站一排，身高并一，现在老师喊，从第一个小朋友开始，两两比较，</p>
+<p>个子高的往右移（老师想让他们从低到高排序），第一轮就有一个小朋友最高的小朋友站到最右边，</p>
+<p>第二轮次高的小朋友站倒数第二个位置，一直到最后一轮，一个小朋友不用比较，所以是n-1轮（9轮）</p>
+<p><img alt="bubble" src="../../images/bubble.gif" /></p>
+<pre><code class="python">def bubble_sort(seq):
+    '''冒泡排序'''
+    n = len(seq)
 
--- Peasant 类
-local Peasant = {}
-
-function Peasant:new()
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-    return o
-end
-
-function Peasant:farm(plant)
-    print('正在种植'..plant)
-end
-
--- Worker 类
-Worker = {}
-
-function Worker:new()
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-    return o
-end
-
-function Worker:work(that)
-    print('正在制造'..that)
-end
+    for i in range(n-1):
+        for j in range(n-1-i):
+            if seq[j] &gt; seq[j+1]:
+                seq[j], seq[j+1] = seq[j+1], seq[j]
 
 
--- MigrantWorker 类
-MigrantWorker = {}
+def test_bubble_sort():
+    import random
+    seq = list(range(10))
+    random.shuffle(seq)
 
-function MigrantWorker:new()
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-    self.farm = Peasant:new().farm
-    self.work = Worker:new().work
-    return o
-end
+    seq_sort = sorted(seq)
+    bubble_sort(seq)
+    assert seq_sort == seq
+</code></pre>
 
--- 创建对象
-local peasant = Peasant:new()
-print(peasant:farm('水稻'))
+<h3 id="n2_1">选择排序(n**2)</h3>
+<p>冒泡排序的思路是两两比较，较大的指移到了最后边，选择排序则是两两比较，选择一个最小的放在第一个位置，</p>
+<p>再从剩下的元素中选择一个最小的放在第二个位置，一直到剩下的元素只有一个元素，也是n-1轮。</p>
+<p>同样的，10个小朋友站成一排，第一轮从10个小朋友中选择一个最矮的放在第一个位置，第二轮从剩下的9个小朋友中，再选择一个最矮的放在第二个位置，一直到只剩下最后一个小朋友，直接站在最后一个位置，也是n-1轮。</p>
+<p>和冒泡排序一样，也是两两交换。</p>
+<p><img alt="select" src="../../images/select.gif" /></p>
+<pre><code class="python">def select_sort(seq):
+    '''选择排序'''
+    n = len(seq)
 
-local work = Worker:new()
-print(work:work('汽车'))
+    for i in range(n-1):
+        for j in range(i+1, n):
+            if seq[j] &lt; seq[i]:
+                seq[i], seq[j] = seq[j], seq[i]
 
-local migrant_worker = MigrantWorker:new()
-print(migrant_worker:farm('小麦'))
-print(migrant_worker:work('汽车'))
+
+def test_select_sort():
+    import random
+    seq = list(range(10))
+
+    random.shuffle(seq)
+    seq_sort = sorted(seq)
+    select_sort(seq)
+    assert seq_sort == seq
+</code></pre>
+
+<h3 id="n2_2">插入排序(n**2)</h3>
+<p>如果有一个有序的序列，要求在这个已经排好序的序列中插入一个数，要求插入后仍然有序。因为是在有序的基础上再排序，利用了之前的有序条件，所以是稳定排序。</p>
+<p>扑克牌摸牌，第一张摸到手里后，因为手里只有一张牌，认为是有序的，摸第二张的时候，这张牌和第一张比较，</p>
+<p>没他大就交换位置，摸第三张牌的时候，和第二张牌比较，没他大就交换位置，否则一直找到比他小的，交换位</p>
+<p>置。到最后一张牌也找到合适的位置后排好序了。</p>
+<p><img alt="insert" src="../../images/insert.gif" /></p>
+<pre><code class="python">def insert_sort(seq):
+    n = len(seq)
+
+    for i in range(1, n):
+        target = seq[i]
+        pos = i - 1
+        while 0 &lt;= pos and target &lt; seq[pos]:
+            seq[pos+1] = seq[pos]
+            pos -= 1
+        seq[pos+1] = target
+
+
+def test_insert_sort():
+    import random
+    seq = list(range(10))
+    random.shuffle(seq)
+
+    seq_sort = sorted(seq)
+    insert_sort(seq)
+    assert seq_sort == seq
+</code></pre>
+
+<h3 id="_2">希尔排序</h3>
+<p><img alt="" src="../../images/shellsort.gif" /></p>
+<p>1959年Shell发明，第一个突破O(n2)的排序算法，是简单插入排序的改进版。它与插入排序的不同之处在于，它会优先比较距离较远的元素。希尔排序又叫<strong>缩小增量排序</strong>。</p>
+<p>希尔排序属于插入类排序,是将整个有序序列分割成若干小的子序列分别进行插入排序。</p>
+<pre><code class="python">def shell_sort(seq):
+    n = len(seq)
+
+    interval = n // 2  # 不断缩小增量，每次是原来的一半
+    while 0 &lt; interval &lt; n:
+        # 里面是一个插入排序
+        for i in range(1, n):
+            target = seq[i]
+            pos = i - interval
+            while 0 &lt;= pos and target &lt; seq[pos]:
+                seq[pos+interval] = seq[pos]
+                pos -= interval
+            seq[pos+interval] = target
+        interval //= 2
+
+
+def test_insert_sort():
+    import random
+    seq = list(range(10))
+    random.shuffle(seq)
+
+    seq_sort = sorted(seq)
+    shell_sort(seq)
+    assert seq_sort == seq
 </code></pre></div>
         </div>
 
